@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BF08A3B2BF1AA1200F4DB13 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9BF08A3A2BF1AA1200F4DB13 /* main.mm */; };
+		9BF08A3D2BF1AA5200F4DB13 /* MetalSoftmax.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9BF08A3C2BF1AA5200F4DB13 /* MetalSoftmax.mm */; };
+		9BF08A412BF1AAF000F4DB13 /* AccelerateSoftmax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BF08A3F2BF1AAF000F4DB13 /* AccelerateSoftmax.cpp */; };
+		9BF08A442BF1AB0500F4DB13 /* BasicSoftmax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BF08A422BF1AB0500F4DB13 /* BasicSoftmax.cpp */; };
+		9BF08A472BF1B2DC00F4DB13 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF08A462BF1B2DC00F4DB13 /* Accelerate.framework */; };
+		9BF08A492BF1B2E600F4DB13 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF08A482BF1B2E600F4DB13 /* Metal.framework */; };
+		9BF08A4B2BF1B2F200F4DB13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF08A4A2BF1B2F200F4DB13 /* Foundation.framework */; };
+		9BF08A4D2BF1B41100F4DB13 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9BF08A4C2BF1B41100F4DB13 /* Shaders.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9BF08A2E2BF1A9C700F4DB13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9B766E932BF1C4BE0033533E /* BLASSoftmax.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BLASSoftmax.hpp; sourceTree = "<group>"; };
+		9BF08A302BF1A9C700F4DB13 /* CMPE200_Softmax */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CMPE200_Softmax; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF08A3A2BF1AA1200F4DB13 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		9BF08A3C2BF1AA5200F4DB13 /* MetalSoftmax.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MetalSoftmax.mm; sourceTree = "<group>"; };
+		9BF08A3E2BF1AAD500F4DB13 /* MetalSoftmax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalSoftmax.h; sourceTree = "<group>"; };
+		9BF08A3F2BF1AAF000F4DB13 /* AccelerateSoftmax.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AccelerateSoftmax.cpp; sourceTree = "<group>"; };
+		9BF08A402BF1AAF000F4DB13 /* AccelerateSoftmax.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AccelerateSoftmax.hpp; sourceTree = "<group>"; };
+		9BF08A422BF1AB0500F4DB13 /* BasicSoftmax.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BasicSoftmax.cpp; sourceTree = "<group>"; };
+		9BF08A432BF1AB0500F4DB13 /* BasicSoftmax.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BasicSoftmax.hpp; sourceTree = "<group>"; };
+		9BF08A462BF1B2DC00F4DB13 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9BF08A482BF1B2E600F4DB13 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		9BF08A4A2BF1B2F200F4DB13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9BF08A4C2BF1B41100F4DB13 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BF08A2D2BF1A9C700F4DB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF08A4B2BF1B2F200F4DB13 /* Foundation.framework in Frameworks */,
+				9BF08A492BF1B2E600F4DB13 /* Metal.framework in Frameworks */,
+				9BF08A472BF1B2DC00F4DB13 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BF08A272BF1A9C700F4DB13 = {
+			isa = PBXGroup;
+			children = (
+				9BF08A322BF1A9C700F4DB13 /* CMPE200_Softmax */,
+				9BF08A312BF1A9C700F4DB13 /* Products */,
+				9BF08A452BF1B2DC00F4DB13 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9BF08A312BF1A9C700F4DB13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BF08A302BF1A9C700F4DB13 /* CMPE200_Softmax */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BF08A322BF1A9C700F4DB13 /* CMPE200_Softmax */ = {
+			isa = PBXGroup;
+			children = (
+				9BF08A3A2BF1AA1200F4DB13 /* main.mm */,
+				9BF08A3C2BF1AA5200F4DB13 /* MetalSoftmax.mm */,
+				9BF08A3E2BF1AAD500F4DB13 /* MetalSoftmax.h */,
+				9BF08A3F2BF1AAF000F4DB13 /* AccelerateSoftmax.cpp */,
+				9BF08A402BF1AAF000F4DB13 /* AccelerateSoftmax.hpp */,
+				9BF08A422BF1AB0500F4DB13 /* BasicSoftmax.cpp */,
+				9BF08A432BF1AB0500F4DB13 /* BasicSoftmax.hpp */,
+				9BF08A4C2BF1B41100F4DB13 /* Shaders.metal */,
+				9B766E932BF1C4BE0033533E /* BLASSoftmax.hpp */,
+			);
+			path = CMPE200_Softmax;
+			sourceTree = "<group>";
+		};
+		9BF08A452BF1B2DC00F4DB13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BF08A4A2BF1B2F200F4DB13 /* Foundation.framework */,
+				9BF08A482BF1B2E600F4DB13 /* Metal.framework */,
+				9BF08A462BF1B2DC00F4DB13 /* Accelerate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BF08A2F2BF1A9C700F4DB13 /* CMPE200_Softmax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BF08A372BF1A9C700F4DB13 /* Build configuration list for PBXNativeTarget "CMPE200_Softmax" */;
+			buildPhases = (
+				9BF08A2C2BF1A9C700F4DB13 /* Sources */,
+				9BF08A2D2BF1A9C700F4DB13 /* Frameworks */,
+				9BF08A2E2BF1A9C700F4DB13 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CMPE200_Softmax;
+			productName = CMPE200_Softmax;
+			productReference = 9BF08A302BF1A9C700F4DB13 /* CMPE200_Softmax */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BF08A282BF1A9C700F4DB13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					9BF08A2F2BF1A9C700F4DB13 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 9BF08A2B2BF1A9C700F4DB13 /* Build configuration list for PBXProject "CMPE200_Softmax" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BF08A272BF1A9C700F4DB13;
+			productRefGroup = 9BF08A312BF1A9C700F4DB13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BF08A2F2BF1A9C700F4DB13 /* CMPE200_Softmax */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BF08A2C2BF1A9C700F4DB13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF08A3D2BF1AA5200F4DB13 /* MetalSoftmax.mm in Sources */,
+				9BF08A412BF1AAF000F4DB13 /* AccelerateSoftmax.cpp in Sources */,
+				9BF08A3B2BF1AA1200F4DB13 /* main.mm in Sources */,
+				9BF08A442BF1AB0500F4DB13 /* BasicSoftmax.cpp in Sources */,
+				9BF08A4D2BF1B41100F4DB13 /* Shaders.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9BF08A352BF1A9C700F4DB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9BF08A362BF1A9C700F4DB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9BF08A382BF1A9C700F4DB13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9BF08A392BF1A9C700F4DB13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BF08A2B2BF1A9C700F4DB13 /* Build configuration list for PBXProject "CMPE200_Softmax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BF08A352BF1A9C700F4DB13 /* Debug */,
+				9BF08A362BF1A9C700F4DB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BF08A372BF1A9C700F4DB13 /* Build configuration list for PBXNativeTarget "CMPE200_Softmax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BF08A382BF1A9C700F4DB13 /* Debug */,
+				9BF08A392BF1A9C700F4DB13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BF08A282BF1A9C700F4DB13 /* Project object */;
+}
